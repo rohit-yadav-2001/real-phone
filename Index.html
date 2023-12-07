@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web site Disign</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <div class="logo">
+          <img src="/RealPhone_WebPage_Images/images/logo.png" alt="" />
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Phone</a></li>
+            <li><a href="#">Contact </a></li>
+          </ul>
+        </div>
+      </nav>
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="/RealPhone_WebPage_Images/images/mobile.png" alt="" class="mobile">
+            <div id="circle">
+              <div class="feature one">
+                <img src="/RealPhone_WebPage_Images/images/camera.png" alt="" />
+                <div>
+                  <h1>Camera</h1>
+                  <p>12mp,wide Angle Lens</p>
+                </div>
+              </div>
+              <div class="feature two">
+                <img src="/RealPhone_WebPage_Images/images/processor.png" alt="" />
+                <div>
+                  <h1>processor</h1>
+                  <p>Snapdragan gen 1</p>
+                </div>
+              </div>
+              <div class="feature three">
+                <img src="/RealPhone_WebPage_Images/images/display.png" alt="" />
+                <div>
+                  <h1>Display</h1>
+                  <p>Super Amoled Display</p>
+                </div>
+              </div>
+              <div class="feature four">
+                <img src="/RealPhone_WebPage_Images/images/battery.png " alt="" />
+                <div>
+                  <h1>Battery</h1>
+                  <p>5000mah</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="controls">
+        <img src="/RealPhone_WebPage_Images/images/arrow.png" alt="" id="upbtn">
+        <h3>Features</h3>
+        <img src="/RealPhone_WebPage_Images/images/arrow.png " alt="" id="downbtn">
+      </div>
+    </div>
+    <script>
+        var circle = document.getElementById("circle");
+        var upbtn = document.getElementById("upbtn");
+        var downbtn = document.getElementById("downbtn");
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+        
+
+        upbtn.onclick = function(){
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum; circle.style.transform 
+            rotateValue = rotateSum;
+        }
+        downbtn.onclick = function(){
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum; circle.style.transform 
+            rotateValue = rotateSum;
+        }
+
+    </script>
+  </body>
+</html>
+ 
